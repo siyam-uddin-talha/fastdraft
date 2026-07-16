@@ -1,0 +1,6 @@
+{
+  "name": "FastDraft",
+  "description": "Draft, customize, and sign legally sound agreements for freelance work and contractors instantly with FastDraft.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

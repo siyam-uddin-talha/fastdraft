@@ -1,7 +1,7 @@
 "use client";
 
+import { Footer } from "@/sections/home/Footer";
 import React from "react";
-import { Footer } from "@/app/sections/home/Footer";
 
 interface WorkspaceLayoutProps {
   children: React.ReactNode;
@@ -9,7 +9,11 @@ interface WorkspaceLayoutProps {
   sidebar: React.ReactNode;
 }
 
-export function WorkspaceLayout({ children, header, sidebar }: WorkspaceLayoutProps) {
+export function WorkspaceLayout({
+  children,
+  header,
+  sidebar,
+}: WorkspaceLayoutProps) {
   return (
     <div className="min-h-screen bg-[#f0f4ee] text-[#1e3020] font-sans selection:bg-lime-100 selection:text-[#1e3020] antialiased">
       {header}

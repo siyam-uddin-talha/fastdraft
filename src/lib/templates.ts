@@ -659,5 +659,655 @@ export const CONTRACT_TEMPLATES: ContractTemplate[] = [
       "Term of Secrecy: Disclosed confidential information must be protected with reasonable care and kept secret for a period of three (3) years.",
       "Permitted Use: Receiving party shall use the confidential assets solely to evaluate the prospective business transaction and for no other purpose."
     ]
+  },
+  {
+    id: "unilateral-nda",
+    title: "Unilateral Non-Disclosure Agreement",
+    category: "NDA",
+    scope: "One-way protection of proprietary business information, business models, technical databases, and intellectual properties shared by the Disclosing Party with the Receiving Party.",
+    rate: "Gratis / Pre-Collaboration",
+    schedule: "No financial transaction. Bound by mutual interest to evaluate a potential business engagement.",
+    ownership: "The Disclosing Party retains exclusive ownership of all disclosed proprietary materials, intellectual properties, and trade secrets.",
+    clauses: [
+      "Definition of Confidential Info: Confidential Information includes all non-public technical, financial, and operational details marked as proprietary or understood to be secret by the nature of disclosure.",
+      "Secrecy Duration: The Receiving Party agrees to maintain absolute confidentiality of all disclosed materials for a period of five (5) years from the execution date."
+    ]
+  },
+  {
+    id: "contractor-nda",
+    title: "Independent Contractor NDA",
+    category: "NDA",
+    scope: "Non-disclosure and data protection agreement for freelance contractors receiving access to corporate source code, customer records, and internal business frameworks.",
+    rate: "Included in Service Retainer",
+    schedule: "No independent cost. Part of the main independent contractor engagement terms.",
+    ownership: "All internal business assets, database structures, client communications, and server credentials remain the sole intellectual property of the Client.",
+    clauses: [
+      "Customer Data Privacy: The Contractor agrees not to download, copy, or distribute customer personally identifiable information (PII) to any external server or network.",
+      "Destruction of Data: Upon contract termination, the Contractor will permanently delete all local copies of server credentials, project repositories, and client files within 24 hours."
+    ]
+  },
+  {
+    id: "employee-nda",
+    title: "Standard Employee NDA",
+    category: "NDA",
+    scope: "Employment-based non-disclosure agreement to protect trade secrets, proprietary workflows, sales pipelines, client rosters, and internal strategy decks from external leakage.",
+    rate: "Included in Salary / Employment",
+    schedule: "No direct fees. Bound by the terms of employment and receipt of wages.",
+    ownership: "The Employer retains full, exclusive ownership of all methods, formulas, codes, strategies, and customer contacts generated or accessed during employment.",
+    clauses: [
+      "Duty of Confidentiality: The Employee shall not disclose, print, copy, or utilize any trade secrets or proprietary company information outside official duties.",
+      "Post-Employment Survival: The obligations of secrecy survive employment termination and remain in effect for three (3) years post-employment."
+    ]
+  },
+  {
+    id: "investor-nda",
+    title: "Investor Pitch Deck NDA",
+    category: "NDA",
+    scope: "Non-disclosure agreement restricting potential venture capitalist, angel investor, or lender from sharing pitch decks, financial sheets, and prototype diagrams with third parties.",
+    rate: "Gratis / Evaluation Phase",
+    schedule: "No financial exchange. Conditioned upon the evaluation of a potential equity or debt investment.",
+    ownership: "The Startup retains all rights to the pitch deck, financial tables, patent-pending schemas, and product prototype diagrams.",
+    clauses: [
+      "Restricted Replication: The Investor shall not copy, transmit, or share the pitch deck or operational figures with any external networks or competitive startups.",
+      "Permitted Evaluators: Disclosures may only be shared with the Investor's immediate partners, legal counsel, and financial analysts on a strict need-to-know basis."
+    ]
+  },
+  {
+    id: "ma-nda",
+    title: "M&A Corporate Evaluation NDA",
+    category: "NDA",
+    scope: "High-grade mutual non-disclosure and standstill agreement to facilitate due diligence for a potential corporate acquisition, merger, or asset purchase.",
+    rate: "Gratis / Corporate Evaluation",
+    schedule: "No direct fees. Execution is a prerequisite for opening the secure virtual data room (VDR).",
+    ownership: "Each corporation retains absolute title to its own financial audits, customer directories, codebases, and intellectual assets.",
+    clauses: [
+      "Standstill Provision: The Receiving Party agrees not to solicit, hire, or poach key executives or employees of the Disclosing Party for a period of two (2) years.",
+      "Return of Information: If negotiations fail, both parties must certify in writing the permanent erasure of all records exported from the virtual data room."
+    ]
+  },
+  {
+    id: "ip-assignment",
+    title: "Intellectual Property Assignment Agreement",
+    category: "Legal",
+    scope: "Complete, worldwide transfer and assignment of all inventions, source codes, patents, trademarks, and creative copyrights from the Developer to the Client.",
+    rate: "Included in Work Product Payment",
+    schedule: "IP transfer completes immediately upon full settlement of all corresponding project invoice payments.",
+    ownership: "All intellectual rights, moral rights, and titles to the developed assets transfer fully and permanently to the Client.",
+    clauses: [
+      "Further Assurances: The Developer agrees to sign any patent applications, copyright registrations, or trademark filings necessary to perfect the Client's ownership.",
+      "Developer Warranty: The Developer warrants that the work product is original, does not infringe third-party IP, and contains no open-source copyleft licenses."
+    ]
+  },
+  {
+    id: "non-compete-contract",
+    title: "Contractor Non-Compete Agreement",
+    category: "Legal",
+    scope: "Restrictive covenant preventing the Contractor from working with direct competitors or launching a competing business in the same market vertical during the engagement.",
+    rate: "Included in Engagement Fees",
+    schedule: "No separate billing. A material condition of the independent contractor service agreement.",
+    ownership: "The Client maintains exclusive rights to its proprietary business methods, marketing channels, and client lists.",
+    clauses: [
+      "Restricted Geography: The Contractor shall not engage in competitive services within the specified territory (e.g. North America) for a duration of one (1) year post-termination.",
+      "Vertical Definition: Competition is strictly defined as providing identical database-management tools or software services targeting the same niche."
+    ]
+  },
+  {
+    id: "non-solicitation",
+    title: "Client & Employee Non-Solicitation Agreement",
+    category: "Legal",
+    scope: "Legal covenant restricting the service provider from hiring the Client's employees, or pitching services directly to the Client's active customer base.",
+    rate: "Gratis / Mutual Protection",
+    schedule: "Bound as a covenant within the broader commercial vendor service agreement.",
+    ownership: "Client lists, personnel files, and vendor contacts remain proprietary to their respective parties.",
+    clauses: [
+      "Non-Solicitation of Staff: Neither party will recruit, hire, or solicit any employee of the other party during the term and for twelve (12) months after.",
+      "Client Protection: The Provider shall not solicit active clients of the Client whom they became aware of during this engagement."
+    ]
+  },
+  {
+    id: "saas-licensing",
+    title: "SaaS Software Licensing Agreement",
+    category: "Legal",
+    scope: "Granting a non-transferable, non-exclusive enterprise license to access and use the SaaS cloud platform for up to 50 active internal corporate users.",
+    rate: "$500 / month",
+    schedule: "Billed monthly via automatic recurring credit card payment, net 0 term.",
+    ownership: "The SaaS vendor retains all ownership, source code, APIs, database architectures, and look-and-feel copyrights of the platform.",
+    clauses: [
+      "Uptime Commitment: The Vendor guarantees a monthly platform uptime service level agreement (SLA) of 99.9%, excluding pre-scheduled maintenance.",
+      "Usage Limits: Exceeding 10,000 monthly API calls will result in automatic overage charges of $0.05 per additional call."
+    ]
+  },
+  {
+    id: "affiliate-partnership",
+    title: "Joint Affiliate Marketing Partnership",
+    category: "Legal",
+    scope: "Structuring a marketing partnership where the Affiliate promotes the Client's SaaS platform using custom referral links, tracking cookies, and banners.",
+    rate: "30% recurring commission",
+    schedule: "Payouts made monthly on the 15th for the previous month's referred sales, subject to a $100 minimum threshold.",
+    ownership: "The Client retains complete ownership of branding, domains, and customer relationships. Affiliate owns their content channels.",
+    clauses: [
+      "Exclusionary Terms: Affiliate will not bidding on the Client's brand terms in Google Search Ads, nor publish spam links on public web forums.",
+      "Cookie Duration: Referral sales are tracked using a 30-day attribution cookie window from the user's initial click."
+    ]
+  },
+  {
+    id: "ai-model-training",
+    title: "AI Model Dataset Training Contract",
+    category: "AI & Data",
+    scope: "Curating, cleaning, formatting, and preparing a dataset of 50,000 high-quality text-to-SQL pairings for training custom language models.",
+    rate: "$5,000 Flat Fee",
+    schedule: "30% upfront deposit, 40% on sample validation, 30% upon final JSON database delivery.",
+    ownership: "The Client retains exclusive, royalty-free, perpetual ownership of the dataset and all custom weights generated by training the model.",
+    clauses: [
+      "Data Cleansing: The Datasets must be thoroughly audited to remove any PII, toxic language, or copyright-infringing content.",
+      "Verification Sweep: Includes running automated validation checks to verify that 100% of the text-to-SQL queries run error-free."
+    ]
+  },
+  {
+    id: "prompt-engineering",
+    title: "Prompt Engineering Service Contract",
+    category: "AI & Data",
+    scope: "Designing, optimizing, and evaluation testing of system prompts and agentic schemas for the Client's customer support LLM pipeline.",
+    rate: "$95 / hour",
+    schedule: "Billed bi-weekly with detailed spreadsheet timesheets, net 14-day terms.",
+    ownership: "The system prompts, vector indexing structures, and custom agent logic belong entirely to the Client upon payment clearance.",
+    clauses: [
+      "LLM Agnosticism: Prompts will be tested and optimized for Anthropic Claude, OpenAI GPT-4, and Google Gemini models.",
+      "Security Protocols: Prompts must incorporate guardrails to prevent jailbreaking, prompt injection attacks, and hallucinated output leaks."
+    ]
+  },
+  {
+    id: "vector-db-setup",
+    title: "RAG & Vector Database Integration",
+    category: "AI & Data",
+    scope: "Deploying a Pinecone/Qdrant vector index, writing data ingestion pipelines to chunk internal markdown docs, and connecting the database with a LangChain search api.",
+    rate: "$4,000 Flat Fee",
+    schedule: "50% upfront deposit, 50% upon successful live search query testing and documentation hand-off.",
+    ownership: "The ingestion scripts, deployment layouts, and internal search APIs belong to the Client once paid.",
+    clauses: [
+      "Chunking Logic: Files will be chunked using semantic splitting with overlapping boundaries to ensure context integrity.",
+      "Hosting Costs: The Client is responsible for setting up and paying for cloud hosting (AWS/Vercel) and database node costs directly."
+    ]
+  },
+  {
+    id: "llm-finetuning",
+    title: "LLM Fine-Tuning Agreement",
+    category: "AI & Data",
+    scope: "Fine-tuning a Llama-3 8B model using LoRA adapters on Client's customer service logs, including evaluation sweeps and Docker deployment templates.",
+    rate: "$6,500 Flat Fee",
+    schedule: "$2,500 upfront, $2,000 upon training completion, $2,000 on API deployment and hand-off.",
+    ownership: "The fine-tuned model adapters, code configurations, and weights belong to the Client.",
+    clauses: [
+      "Evaluation Baseline: The fine-tuned model must outperform the base model by at least 15% on target customer response accuracy evaluation datasets.",
+      "Model Backup: The Developer will host secure backups of training logs and checkpoints for 60 days following handover."
+    ]
+  },
+  {
+    id: "data-science-consulting",
+    title: "Predictive Analytics Consulting Contract",
+    category: "AI & Data",
+    scope: "Analyzing transaction databases, building user churn forecasting models in Python, and delivering a Jupyter notebook dashboard showing user lifetime values.",
+    rate: "$130 / hour",
+    schedule: "Weekly invoice submissions, payable within 10 business days.",
+    ownership: "The predictive algorithms, notebooks, and database visualizations are owned by the Client.",
+    clauses: [
+      "Data Integrity: The Consultant is not responsible for business revenue drops, but warrants applying standard data engineering methodologies.",
+      "Security Shield: All customer transaction logs will be processed in a secure environment and never uploaded to public AI services."
+    ]
+  },
+  {
+    id: "data-annotation",
+    title: "Audio Data Labeling Agreement",
+    category: "AI & Data",
+    scope: "Manually transcribing and labeling speaker segments, sentiment nodes, and environmental sounds for 200 hours of raw customer service call audio.",
+    rate: "$2.00 per audio minute",
+    schedule: "Billed weekly based on verified labeled batch delivery, due net 10 terms.",
+    ownership: "All transcription sheets, metadata labels, and audio files are the exclusive property of the Client.",
+    clauses: [
+      "Label Standard: Data must follow strict formatting (e.g. JSON format with start/end millisecond nodes).",
+      "Accuracy Guarantee: Labeled batches with an error rate exceeding 1.5% will be re-processed at the Contractor's cost."
+    ]
+  },
+  {
+    id: "firmware-dev",
+    title: "IoT Firmware Development Agreement",
+    category: "Engineering",
+    scope: "Writing C/C++ firmware for ESP32 boards, integrating Wi-Fi connectivity APIs, configuring sensor read cycles, and optimizing low-power deep-sleep states.",
+    rate: "$90 / hour",
+    schedule: "Milestone based: $3,000 upon hardware-schematic review, balance upon delivery of verified firmware source code.",
+    ownership: "Firmware source files, layout scripts, and flashing instructions belong entirely to the Client.",
+    clauses: [
+      "Over-the-Air Updates: Firmware will support secure OTA updates using encrypted HTTPS endpoints.",
+      "Debugging support: Includes 3 months of remote developer support for compiling bug fixes post-launch."
+    ]
+  },
+  {
+    id: "pcb-design",
+    title: "Electronic PCB Design Contract",
+    category: "Engineering",
+    scope: "Designing a 4-layer PCB schematic and layout in KiCad, selecting BOM components, and delivering manufacturing-ready Gerber and drill files.",
+    rate: "$2,200 Flat Fee",
+    schedule: "50% upfront deposit, 50% upon successful delivery of Gerber files and BOM spreadsheets.",
+    ownership: "The KiCad project directories, layout schematics, and BOM belong exclusively to the Client.",
+    clauses: [
+      "DFM Guidelines: The layout will adhere to standard Design for Manufacturing (DFM) rules specified by the Client's chosen manufacturer.",
+      "Component Availability: The Designer warrants sourcing easily available parts from suppliers like Mouser or DigiKey to avoid assembly line holds."
+    ]
+  },
+  {
+    id: "cad-modeling",
+    title: "3D CAD Product Design Contract",
+    category: "Engineering",
+    scope: "Designing structural enclosures for an electronic consumer product using SolidWorks, ensuring fits for internal PCBs, and exporting files for injection molding.",
+    rate: "$80 / hour",
+    schedule: "Billed upon milestone completions, net 15 days from invoicing.",
+    ownership: "All SolidWorks files, assembly layouts, and STEP models are owned by the Client.",
+    clauses: [
+      "Draft Angles: Enclosures will incorporate proper draft angles (1.5 to 2 degrees) to allow secure plastic injection mold ejection.",
+      "Prototypes Test: Includes adjusting designs based on feedback from up to two rounds of 3D printed prototyping."
+    ]
+  },
+  {
+    id: "hardware-testing",
+    title: "Hardware QA & Environmental Testing",
+    category: "Engineering",
+    scope: "Conducting thermal stress tests, signal integrity analysis, power consumption logging, and compiling a hardware test report for the Client's prototype.",
+    rate: "$2,500 Flat Fee",
+    schedule: "50% upfront, 50% upon delivery of the test logs and environmental audit report.",
+    ownership: "Test logs, report sheets, and thermal photos belong to the Client.",
+    clauses: [
+      "Equipment Access: The Client must supply two fully assembled, functional prototypes along with appropriate testing manuals.",
+      "Destructive Testing: The Client acknowledges that prototypes may be pushed beyond thermal limits and damaged during testing."
+    ]
+  },
+  {
+    id: "devops-pipeline",
+    title: "DevOps CI/CD Automation Contract",
+    category: "Engineering",
+    scope: "Writing GitHub Actions pipelines, configuring Docker Compose files, deploying a Kubernetes cluster on AWS EKS, and setting up Prometheus metric monitoring.",
+    rate: "$110 / hour",
+    schedule: "Billed bi-weekly with detailed task breakdowns, net 14-day payment.",
+    ownership: "All Terraform scripts, YAML configurations, and automation scripts belong to the Client.",
+    clauses: [
+      "Zero Downtime: The pipeline must support rolling updates to deploy application containers with zero service downtime.",
+      "Secret Management: Infrastructure secrets will be managed using AWS Secrets Manager rather than hardcoded configurations."
+    ]
+  },
+  {
+    id: "api-integration",
+    title: "B2B API Integration Agreement",
+    category: "Engineering",
+    scope: "Writing custom Node.js middleware to integrate Salesforce CRM with Client's core transaction API, including webhook handlers and error logs.",
+    rate: "$3,000 Flat Fee",
+    schedule: "50% upfront deposit, 50% upon deployment to production and 7 days of error-free log monitoring.",
+    ownership: "The middleware repository, mapping scripts, and endpoint tests belong exclusively to the Client.",
+    clauses: [
+      "Rate Limiting: Middleware must handle API rate limits and include automatic exponential backoff retry cycles.",
+      "Data Encryption: All data payloads passed between CRM and API must be encrypted in transit using TLS 1.3."
+    ]
+  },
+  {
+    id: "influencer-campaign-nda",
+    title: "Influencer Campaign Non-Disclosure",
+    category: "NDA",
+    scope: "Protecting embargo details, unreleased product features, and marketing timelines shared with a social media influencer prior to the campaign launch.",
+    rate: "Gratis / Part of Campaign Brief",
+    schedule: "No fees. Bound by the promotional influencer service agreement terms.",
+    ownership: "The Client maintains exclusive ownership of all unreleased products, branding assets, and marketing guidelines.",
+    clauses: [
+      "Embargo Timeline: The Influencer shall not post, speak about, or show the product on any platform until the official launch date on October 1st.",
+      "Restricted Shares: The Influencer must keep product packaging, designs, and shipping boxes out of background frames in other posts prior to launch."
+    ]
+  },
+  {
+    id: "sales-commission",
+    title: "Sales Representative Agreement",
+    category: "Marketing",
+    scope: "Conducting B2B sales outreach, booking demo calls for Client's enterprise software, and closing contract sales in the target territory.",
+    rate: "$1,500/mo + 15% Commission",
+    schedule: "Retainer paid on the 1st of each month; commissions paid monthly on invoice clearance of referred clients.",
+    ownership: "All sales leads, CRM data, and email records are the exclusive property of the Client.",
+    clauses: [
+      "Exclusivity: The Sales Representative represents that they do not sell competing software systems targeting the same client list.",
+      "Commission Cap: Commission is paid on the first year's contract value only, excluding subsequent renewal periods."
+    ]
+  },
+  {
+    id: "pitch-deck-design",
+    title: "Investor Pitch Deck Design Contract",
+    category: "Design",
+    scope: "Designing a 12-slide high-fidelity presentation deck in Figma, structuring the narrative flow, writing slide copy, and delivering PDF and PPTX formats.",
+    rate: "$2,400 Flat Fee",
+    schedule: "50% upfront deposit, 50% upon delivery of final presentations.",
+    ownership: "The Client owns the final presentation. Designer retains the right to display layout renders in their portfolio.",
+    clauses: [
+      "Source Material: The Client must provide all underlying financial spreadsheets and market research figures.",
+      "Revision Rounds: Includes up to three (3) rounds of narrative and design reviews based on founder feedback."
+    ]
+  },
+  {
+    id: "brand-naming",
+    title: "Brand Naming & Identity Strategy",
+    category: "Design",
+    scope: "Conducting brand research workshops, proposing 15 unique company names, checking domain availability, and executing basic search trademark reviews.",
+    rate: "$1,800 Flat Fee",
+    schedule: "50% upfront, 50% upon delivery of the brand naming package and chosen domain list.",
+    ownership: "The selected brand name and registered domain belong exclusively to the Client. Discarded name ideas are retained by the Designer.",
+    clauses: [
+      "No Trademark Guarantee: The Designer conducts basic database checks but recommended names should undergo formal audit by a trademark lawyer.",
+      "Domain Registry: The Client is responsible for paying registry and subscription fees for the chosen domain."
+    ]
+  },
+  {
+    id: "seo-local",
+    title: "Local SEO & Map Pack Contract",
+    category: "Marketing",
+    scope: "Optimizing Client's Google Business Profile, building 50 local citations, tracking map grid positions, and acquiring reviews from past clients.",
+    rate: "$600 / month",
+    schedule: "Retainer billed monthly on the 1st, due net 10.",
+    ownership: "All profiles, optimized media, local citations, and databases remain under the Client's control.",
+    clauses: [
+      "Review Guidelines: The Contractor will guide review acquisition in accordance with Google's terms, avoiding fake reviews or paid incentivization.",
+      "Monthly Reports: Includes a monthly dashboard tracking call requests, map grid rankings, and website clicks."
+    ]
+  },
+  {
+    id: "cro-contract",
+    title: "Conversion Rate Optimization (CRO)",
+    category: "Marketing",
+    scope: "Auditing user click heatmaps, designing A/B landing page variations in Hotjar/VWO, and tweaking Shopify checkout steps to improve conversions.",
+    rate: "$120 / hour",
+    schedule: "Billed monthly based on logged hours, net 15-day term.",
+    ownership: "All custom codes, A/B test scripts, and analytical dashboards belong to the Client.",
+    clauses: [
+      "Traffic Minimum: The Client is responsible for maintaining standard traffic volumes (minimum 10k visits/mo) for A/B test validity.",
+      "Methodology: The Optimizer will implement changes based on statistical significance testing (minimum 95% confidence intervals)."
+    ]
+  },
+  {
+    id: "ghostwriting-contract",
+    title: "Book Ghostwriting Agreement",
+    category: "Writing",
+    scope: "Drafting a 40,000-word business leadership memoir based on transcripts from 10 hours of audio interviews with the Author.",
+    rate: "$10,000 Flat Fee",
+    schedule: "Paid in 4 milestones: 25% upfront, 25% on Outline, 25% on first 20k words, 25% on final draft completion.",
+    ownership: "The Author retains 100% exclusive copyright, authorship credits, and future royalties. The Ghostwriter remains completely anonymous.",
+    clauses: [
+      "Interview Cooperation: The Author agrees to make themselves available for scheduled interviews and provide outline notes.",
+      "Confidentiality: The Ghostwriter will never disclose their participation in writing the book to any public network or third party."
+    ]
+  },
+  {
+    id: "grant-writing",
+    title: "Grant Proposal Writing Agreement",
+    category: "Writing",
+    scope: "Researching corporate foundations, writing a detailed grant application for a non-profit organization, and preparing budget templates.",
+    rate: "$80 / hour",
+    schedule: "Weekly timesheets, due within 14 days of invoice.",
+    ownership: "The compiled grant proposal and application files belong entirely to the Client.",
+    clauses: [
+      "No Success Commission: In compliance with professional ethics, the Writer is paid for draft assembly and does not charge a percentage of the awarded grant.",
+      "Accurate Data: The Client must supply audited financial reports and program execution records required for the proposal."
+    ]
+  },
+  {
+    id: "resume-writing",
+    title: "Executive Resume Writing Agreement",
+    category: "Writing",
+    scope: "Rewriting executive resume, optimizing LinkedIn profile section copy, and drafting a customizable cover letter tailored for executive positions.",
+    rate: "$450 Flat Fee",
+    schedule: "100% paid upfront prior to scheduling the initial intake call.",
+    ownership: "The final resume PDF, DOCX, and profile copy belong exclusively to the Client for personal job application use.",
+    clauses: [
+      "Timeline: Initial drafts will be shared within 5 business days of the intake call. Review period ends after 14 days.",
+      "Review Scope: Includes up to two (2) rounds of textual revision based on candidate feedback."
+    ]
+  },
+  {
+    id: "newsletter-mgmt",
+    title: "Newsletter Management Contract",
+    category: "Writing",
+    scope: "Curating, formatting, writing, and scheduling 4 weekly Substack newsletters, including graphic headers and post-send subscriber analysis reports.",
+    rate: "$800 / month",
+    schedule: "Billed monthly in advance, payable on the 1st of each service month.",
+    ownership: "Substack profile, subscriber emails, and all copy belong to the Client. The Writer may list post titles in their portfolio.",
+    clauses: [
+      "Subscriber Privacy: The Writer will never export or use the subscriber email database for any external purpose.",
+      "Copy Approval: Newsletters must be submitted to the Client 3 days before sending. Unapproved posts will not be scheduled."
+    ]
+  },
+  {
+    id: "curriculum-design",
+    title: "Online Course Curriculum Contract",
+    category: "Writing",
+    scope: "Designing the module outline, writing script transcripts for 12 video modules, and compiling printable PDF worksheets for a student course.",
+    rate: "$3,000 Flat Fee",
+    schedule: "40% upfront deposit, 30% upon script approval, 30% upon final worksheet delivery.",
+    ownership: "All curriculum blueprints, scripts, and PDFs belong entirely to the Client upon final invoice settlement.",
+    clauses: [
+      "Pedagogical Standards: Material will be structured to meet standard digital learning guidelines and course metrics.",
+      "Formatting: Worksheets will be styled using the Client's brand identity palette and font guidelines."
+    ]
+  },
+  {
+    id: "mural-painting",
+    title: "Commercial Mural Art Agreement",
+    category: "Creative",
+    scope: "Designing and painting a custom 15ft x 10ft wall mural inside the Client's corporate lobby space, including wall prep and paint supplies.",
+    rate: "$4,500 Flat Fee",
+    schedule: "40% deposit to cover supplies, 30% upon sketch selection, 30% upon completion of painting.",
+    ownership: "The Client owns the physical mural artwork. The Artist retains creative rights and copyright for digital reproductions.",
+    clauses: [
+      "Wall Preparation: Client must clear the wall area, repair any structural drywall issues, and ensure proper HVAC airflow prior to kickoff.",
+      "Artist Signature: The mural will include a small, legible signature of the Artist in a lower corner."
+    ]
+  },
+  {
+    id: "fashion-design",
+    title: "Apparel Pattern Design Agreement",
+    category: "Creative",
+    scope: "Drafting 5 digital apparel pattern dielines in DXF format, creating tech packs, and preparing detailed sizing specifications for manufacturing.",
+    rate: "$500 per pattern",
+    schedule: "Paid per completed pattern design package, due net 10 terms.",
+    ownership: "The pattern vectors and tech packs belong to the Client. Designer retains catalog references.",
+    clauses: [
+      "Factory Checks: Includes adjusting pattern dielines based on feedback from the client's selected factory sample run.",
+      "Sizing Matrix: Tech packs will include detailed specifications for standard sizes XS through XL."
+    ]
+  },
+  {
+    id: "voice-acting",
+    title: "Voice Acting Services Contract",
+    category: "Creative",
+    scope: "Recording professional character voice acting tracks for a 5-episode mobile game storyline, delivering clean wav files.",
+    rate: "$150 per episode",
+    schedule: "Paid per completed episode recording, prior to release of un-watermarked audio assets.",
+    ownership: "The Client acquires full digital synchronization rights for use within the mobile game. The Actor retains overall voice-likeness rights.",
+    clauses: [
+      "Retakes: Up to three (3) retakes for tone or mispronunciation are included per episode. Changes to script cost $10 per line.",
+      "Credits: The Voice Actor will be credited in the game's closing credits list under 'Voice Cast'."
+    ]
+  },
+  {
+    id: "illustration-retainer",
+    title: "Illustration Retainer Agreement",
+    category: "Creative",
+    scope: "Delivering up to 8 editorial vector illustrations per month for the Client's printed news magazine layouts.",
+    rate: "$2,000 / month",
+    schedule: "Billed monthly on the last day, payable within 15 days of invoice date.",
+    ownership: "The Client acquires exclusive print publication rights for each illustration. Artist retains copyright for portfolio use.",
+    clauses: [
+      "Deadlines: Standard illustration brief requires a 5 business day notice. Express 24-hour turnaround bills at double the rate.",
+      "Style Guide: Illustrations must adhere to the magazine's visual layout guidelines and color palette specifications."
+    ]
+  },
+  {
+    id: "makeup-artist",
+    title: "Corporate Shoot Makeup Agreement",
+    category: "Creative",
+    scope: "Providing professional makeup application and hair styling services for up to 8 corporate executives during a team photography session.",
+    rate: "$800 Flat Fee",
+    schedule: "50% booking retainer to secure dates, 50% paid on-site upon completion of shoot services.",
+    ownership: "No intellectual copyrights applicable. Photographic images of makeup work are licensed for the Artist's portfolio display.",
+    clauses: [
+      "Sanitization: The Artist warrants that 100% of makeup brushes, kits, and tools undergo medical-grade sanitization between clients.",
+      "Overages: Additional makeup requests outside the specified 8 executives will be billed on-site at $90 per person."
+    ]
+  },
+  {
+    id: "music-mastering",
+    title: "Professional Audio Mastering Agreement",
+    category: "Audio",
+    scope: "Audio mastering for a 10-track musical album, optimizing loudness levels (LUFS) for streaming, and rendering DDP images for CD manufacturing.",
+    rate: "$1,200 Flat Fee",
+    schedule: "50% upfront deposit, 50% upon delivery of finalized master WAV files.",
+    ownership: "Master audio properties are owned by the Artist/Client. The Engineer is credited in album metadata.",
+    clauses: [
+      "Mastering Targets: Masters will meet standard digital streaming targets (e.g. -14 LUFS, -1 dBTP) unless specified otherwise.",
+      "Mix Adjustments: Mastering revisions are free, but re-submitting a new mix file after mastering has completed costs $50 per track."
+    ]
+  },
+  {
+    id: "podcast-scriptwriting",
+    title: "Podcast Scriptwriting Agreement",
+    category: "Audio",
+    scope: "Researching and writing full transcripts and narrative show notes for 2 true-crime podcast episodes per month (45-minute runtime each).",
+    rate: "$500 per script",
+    schedule: "Paid monthly based on completed script delivery, net 14 terms.",
+    ownership: "Script files and research notes belong to the Producer. Writer retains the right to be listed as 'Lead Writer' in episode credits.",
+    clauses: [
+      "Factual Integrity: The Writer must document primary sources and verify names and timelines before submitting the draft.",
+      "Formatting: Scripts must be written in standard dual-column audio production format showing sound effect cues."
+    ]
+  },
+  {
+    id: "dj-service",
+    title: "Corporate DJ Service Agreement",
+    category: "Events",
+    scope: "Providing professional DJ performance services for 4 hours at the Client's annual gala, including sound system and basic lighting setup.",
+    rate: "$1,200 Flat Fee",
+    schedule: "30% non-refundable booking deposit, remaining 70% paid prior to performance kickoff.",
+    ownership: "Musical track licenses are owned by the DJ. Mix recording of the event belongs to the DJ unless purchased separately.",
+    clauses: [
+      "Power Requirements: The Client must provide a dedicated 20-amp, 120-volt circuit within 15 feet of the DJ booth setup.",
+      "Song Request Guidelines: The Client must share a 'Must Play' and 'Do Not Play' list at least 14 days prior to the event date."
+    ]
+  },
+  {
+    id: "live-sound",
+    title: "Live Sound Engineering Contract",
+    category: "Events",
+    scope: "On-site setup of mixing consoles, tuning PA sound systems, performing band soundchecks, and mixing live sound during a 3-hour concert.",
+    rate: "$450 Flat Fee",
+    schedule: "100% paid on-site upon completion of event services.",
+    ownership: "No intellectual copyright transfers. Technical console layouts remain with the Engineer.",
+    clauses: [
+      "Load-In Window: The Engineer must have access to the venue stage at least 3 hours prior to soundcheck.",
+      "Hearing Protection: The Engineer is not responsible for hearing damage claims and will operate the system within local DB limits."
+    ]
+  },
+  {
+    id: "property-management",
+    title: "Property Management Contract",
+    category: "Real Estate",
+    scope: "Handling tenant relations, rent collection, coordinate maintenance tasks, and conducting quarterly property walkthroughs for a residential rental home.",
+    rate: "10% of Monthly Rent",
+    schedule: "Deducted automatically from monthly collected rent prior to transferring remaining funds to the Owner.",
+    ownership: "The Owner retains all property deeds and titles. Tenant list and logs belong to the Owner.",
+    clauses: [
+      "Emergency Repair: The Manager is authorized to schedule emergency repairs up to $500 without prior Owner approval.",
+      "Tenant Eviction: The Manager will manage legal eviction processes, with actual attorney and court costs paid by the Owner."
+    ]
+  },
+  {
+    id: "real-estate-photo",
+    title: "Luxury Real Estate Media Agreement",
+    category: "Real Estate",
+    scope: "Capturing 30 high-resolution interior/exterior photos, 5 aerial drone photos, and editing a 60-second walkthrough video of a residential listing.",
+    rate: "$650 Flat Fee",
+    schedule: "100% paid before final unwatermarked files are shared via digital download link.",
+    ownership: "The Agent is granted a non-exclusive license to use the media for marketing this specific listing. Photographer retains copyright.",
+    clauses: [
+      "Property Prep: The Listing Agent must ensure the home is clean, staged, and lights are on before the photographer's arrival.",
+      "Drone Flight: Drone photography is subject to FAA regulations and weather. Reschedules due to FAA no-fly locks cost no penalty."
+    ]
+  },
+  {
+    id: "home-staging",
+    title: "Real Estate Home Staging Agreement",
+    category: "Real Estate",
+    scope: "Selecting, delivery, and styling of furniture and art pieces to stage the main living room, master bedroom, and kitchen for real estate photos.",
+    rate: "$1,500 + $300/mo rental",
+    schedule: "Setup fee paid upfront. Monthly furniture rental fee billed recurring on the 1st of each staged month.",
+    ownership: "All staging furniture, art, and decor remain the exclusive property of the Staging Company.",
+    clauses: [
+      "Damage Responsibility: The Client is liable for any scratches, stains, or damage occurring to the staged furniture during listing weeks.",
+      "De-staging Window: Staging Company will remove all items within 48 hours of home closing or contract termination."
+    ]
+  },
+  {
+    id: "architectural-rendering",
+    title: "3D Architectural Rendering Agreement",
+    category: "Real Estate",
+    scope: "Creating 3 photorealistic exterior architectural renderings and a 3D walkthrough video based on blueprints provided by the Client.",
+    rate: "$1,800 Flat Fee",
+    schedule: "50% upfront deposit, 50% upon delivery of final high-resolution renders.",
+    ownership: "The Client acquires full commercial rights to the rendered images. Designer retains project assets.",
+    clauses: [
+      "Source Blueprints: The Client must provide accurate floor plans and material guidelines before work kickoff.",
+      "Lighting Variations: Renders include daytime lighting setup. Sunset or night lighting variations cost an additional $100 per render."
+    ]
+  },
+  {
+    id: "dietary-nutrition",
+    title: "Corporate Nutrition Consulting Contract",
+    category: "Wellness",
+    scope: "Designing a 4-week healthy menu template for the Client's corporate cafeteria and hosting a 90-minute wellness lunch-and-learn seminar.",
+    rate: "$1,200 Flat Fee",
+    schedule: "50% upfront, 50% upon seminar completion and digital menu delivery.",
+    ownership: "The Client holds a corporate license to distribute the menu and wellness materials to its employees.",
+    clauses: [
+      "No Medical Advice: The Consultant provides educational wellness guidelines and does not prescribe medical nutrition therapy.",
+      "Seminar Recording: The Client may record the seminar for internal training use only, and cannot sell or publish the video publicly."
+    ]
+  },
+  {
+    id: "yoga-instruction",
+    title: "Corporate Yoga Instruction Agreement",
+    category: "Wellness",
+    scope: "Conducting weekly 60-minute beginner-friendly group yoga classes at the Client's corporate headquarters for up to 20 employees.",
+    rate: "$120 per class",
+    schedule: "Billed monthly at the end of each active service month, due net 10 terms.",
+    ownership: "The Instructor retains all rights to class choreography and mindfulness audio files.",
+    clauses: [
+      "Liability Waiver: The Client warrants that all participating employees sign a standard liability release form prior to class attendance.",
+      "Space Requirement: The Client must supply a clean, quiet workspace suitable for laying down yoga mats."
+    ]
+  },
+  {
+    id: "wardrobe-styling",
+    title: "Fashion Shoot Styling Agreement",
+    category: "Wellness",
+    scope: "Procuring wardrobe pieces from designers, styling 4 looks on-set during a half-day editorial photoshoot, and managing garment returns.",
+    rate: "$800 Flat Fee",
+    schedule: "50% booking retainer, 50% paid on-set upon completion of shoot services.",
+    ownership: "Creative concepts belong to the Client. Stylist retains the right to display final editorial images in their portfolio.",
+    clauses: [
+      "Garment Budget: The Client is responsible for setting a credit card line to cover designer rentals and security deposits.",
+      "Damage to Clothes: The Client is liable for any designer garment damage, dry cleaning fees, or loss occurring during the photoshoot."
+    ]
+  },
+  {
+    id: "private-chef",
+    title: "Private Chef Service Agreement",
+    category: "Wellness",
+    scope: "Designing weekly menus, grocery shopping, preparing 5 custom dinners, packaging meals, and cleaning the kitchen for a family of four.",
+    rate: "$450 / week + Groceries",
+    schedule: "Prepaid in advance on the first day of each active service week.",
+    ownership: "Chef maintains catalog copyrights for all custom-designed recipes.",
+    clauses: [
+      "Grocery Expense: Actual grocery receipt totals will be reimbursed weekly, backed by store receipts.",
+      "Kitchen Access: The Family will provide the Chef with full kitchen access and keep all prep appliances functional."
+    ]
   }
 ];

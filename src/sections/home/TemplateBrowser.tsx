@@ -15,6 +15,8 @@ interface TemplateBrowserProps {
   setSelectedCategory: (cat: string) => void;
   filteredTemplates: ContractTemplate[];
   selectTemplate: (template: ContractTemplate) => void;
+  h1Title?: string;
+  heroDescription?: string;
 }
 
 export function TemplateBrowser({
@@ -28,15 +30,17 @@ export function TemplateBrowser({
   setSelectedCategory,
   filteredTemplates,
   selectTemplate,
+  h1Title,
+  heroDescription,
 }: TemplateBrowserProps) {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-lg font-outfit font-semibold text-[#1e3020] tracking-tight">
-          Step 1: Choose Contract Foundation
-        </h2>
-        <p className="text-xs text-[#526354]">
-          Search and filter over 50 expert-curated template frameworks. Supports standard text or custom regex queries.
+        <h1 className="text-xl sm:text-2xl font-outfit font-bold text-[#1e3020] tracking-tight">
+          {h1Title || "Step 1: Choose Contract Foundation"}
+        </h1>
+        <p className="text-xs sm:text-sm text-[#526354] mt-1 leading-relaxed">
+          {heroDescription || "Search and filter over 100 expert-curated template frameworks. Supports standard text or custom regex queries."}
         </p>
       </div>
 

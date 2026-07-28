@@ -34,7 +34,19 @@ const STEPS = [
   { id: 6, name: "Review & Sign", icon: FileText },
 ];
 
-export default function MicroContractWorkspace() {
+export interface MicroContractWorkspaceProps {
+  initialTemplateId?: string;
+  initialCategory?: string;
+  h1Title?: string;
+  heroDescription?: string;
+}
+
+export default function MicroContractWorkspace({
+  initialTemplateId,
+  initialCategory,
+  h1Title,
+  heroDescription,
+}: MicroContractWorkspaceProps = {}) {
   const tabsContainerRef = useRef<HTMLDivElement>(null);
   const scrollTabs = (direction: "left" | "right") => {
     if (tabsContainerRef.current) {
@@ -123,6 +135,34 @@ export default function MicroContractWorkspace() {
       active = false;
     };
   }, []);
+
+  // Preselect category & template if initial props provided
+  useEffect(() => {
+    if (initialCategory) {
+      setSelectedCategory(initialCategory);
+    }
+    if (initialTemplateId) {
+      const tpl = CONTRACT_TEMPLATES.find((t) => t.id === initialTemplateId);
+      if (tpl) {
+        setForm((prev) => ({
+          ...prev,
+          id: `contract-${Date.now()}`,
+          title: tpl.title,
+          category: tpl.category,
+          scope: tpl.scope,
+          rate: tpl.rate,
+          schedule: tpl.schedule,
+          ownership: tpl.ownership,
+          clauses: tpl.clauses.map((clauseText, i) => {
+            const parts = clauseText.split(":");
+            const title = parts.length > 1 ? parts[0].trim() : `Clause ${i + 1}`;
+            const text = parts.slice(1).join(":").trim() || clauseText;
+            return { title, text };
+          }),
+        }));
+      }
+    }
+  }, [initialTemplateId, initialCategory]);
 
   // Get unique categories from template list
   const categories = useMemo(() => {
@@ -590,6 +630,8 @@ export default function MicroContractWorkspace() {
               setSelectedCategory={setSelectedCategory}
               filteredTemplates={filteredTemplates}
               selectTemplate={selectTemplate}
+              h1Title={h1Title}
+              heroDescription={heroDescription}
             />
           </div>
         ) : (
